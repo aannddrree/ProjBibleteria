@@ -5,25 +5,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Cadastro de Bilhetes</title>
 </head>
 <body>
-    <div style="padding-top:2%"></div>
+    <div style="padding-top: 2%"></div>
     <div class="col-sm-8">
-    <h2>Cadastro de Bilhetes</h2>
+        <h2>Cadastro de Bilhetes</h2>
     </div>
-    <div style="padding-top:2%"></div>
+    <div style="padding-top: 2%"></div>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="lblMSG" runat="server" Font-Bold="True" ForeColor="Blue"></asp:Label>
-            
-            <br />
-            
             <div class="col-sm-2">
+                <asp:Label ID="lblMSG" runat="server" Font-Bold="True" ForeColor="Blue"></asp:Label>
+                <br />
+                <br />
                 <div class="form-group">
                     <asp:Label ID="lblId" runat="server" Text="Id" Visible="False"></asp:Label>
-&nbsp;<asp:TextBox ID="TxtId" CssClass="form-control" runat="server" Width="206px" Enabled="False" Visible="False"></asp:TextBox>
+                    &nbsp;<asp:TextBox ID="TxtId" CssClass="form-control" runat="server" Width="206px" Enabled="False" Visible="False"></asp:TextBox>
                 </div>
                 <div class="form-group">
                     <label for="TxtNome">Descrição</label>
@@ -35,7 +34,7 @@
                     <label for="TxtEndereco">Local</label>
                     <asp:TextBox ID="TxtLocal" CssClass="form-control" runat="server" Width="322px"></asp:TextBox>
                 </div>
-                  <div class="form-group">
+                <div class="form-group">
                     <label for="TxtEndereco">Qtd. de Pessoas</label>
                     <asp:TextBox ID="TxtQtdPessoas" CssClass="form-control" runat="server" Width="322px"></asp:TextBox>
                 </div>
@@ -47,7 +46,7 @@
                     <asp:Button ID="BtnVoltar" runat="server" CssClass="btn btn-default" Text="Voltar" OnClick="BtnVoltar_Click" />
                 </div>
             </div>
-           </div>
-        </form>
+        </div>
+    </form>
 </body>
 </html>

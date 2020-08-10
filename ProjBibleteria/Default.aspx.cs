@@ -42,6 +42,7 @@ namespace ProjBibleteria
             else if (e.CommandName == "E")
             {
                 lblExcluir.Text = id.ToString();
+                lblMsg.Text = "Tem certeza que deseja excluir este registro?";
                 DisplayModal(this);
             }
         }
@@ -58,6 +59,7 @@ namespace ProjBibleteria
         {
             int id = int.Parse(lblExcluir.Text);
             new BilheteriaDB().Delete(id);
+            LoadTable();
         }
     }
 }
